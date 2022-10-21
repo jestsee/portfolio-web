@@ -1,21 +1,19 @@
-import NavbarItem from '@components/NavbarItem';
+import { NavbarItem } from '@components/NavbarItem'
 
-const Navbar = () => {
+export function Navbar() {
   return (
     <>
-      <div className="text-lg flex justify-between items-center">
-        <div className="font-bold text-2xl">Jestsee.</div>
-        <ul className="grid grid-cols-3 w-[500px] text-center">
-          <NavbarItem text='Home'/>
-          <NavbarItem text='Section 2'/>
-          <NavbarItem text='Section 3'/>
+      <div className="flex items-center justify-between text-lg py-12">
+        <div className="text-2xl font-bold">Jestsee.</div>
+        <ul className="grid w-[500px] grid-cols-1 sm:grid-cols-3 text-center">
+          <NavbarItem text="Home" />
+          <NavbarItem text="Section 2" />
+          <NavbarItem text="Section 3" />
         </ul>
-        <button className="bg-[#009683] font-bold px-4 py-[0.125rem] rounded-2xl">
+        <button className="rounded-2xl bg-[#009683] px-4 py-[0.125rem] font-bold">
           Resume
         </button>
       </div>
     </>
   )
 }
-
-export default Navbar

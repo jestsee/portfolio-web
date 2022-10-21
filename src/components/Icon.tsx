@@ -1,12 +1,18 @@
-interface Props {
-  className?: string
+import type {BaseProps} from '@custom-types/props'
+
+interface Props extends BaseProps {
+  href?: string
   children: JSX.Element
 }
 
-const Icon = ({children, className}:Props) => {
-  return (<div className={className}>
-    {children}
-  </div>)
+export function Icon({ children, className, href }: Props) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className={`${className} mx-auto transition-all hover:scale-125`}
+    >
+      {children}
+    </a>
+  )
 }
-
-export default Icon

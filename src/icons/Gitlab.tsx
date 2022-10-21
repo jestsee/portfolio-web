@@ -1,6 +1,11 @@
-const Gitlab = () => {
+interface Props {
+  className?: string
+}
+
+const Gitlab = ({ className }: Props) => {
   return (
     <svg
+      className={className}
       width="63"
       height="63"
       viewBox="0 0 63 63"

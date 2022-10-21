@@ -9,6 +9,9 @@
       "@icons/*": [
         "src/icons/*"
       ],
+      "@custom-types/*": [
+        "src/custom-types/*"
+      ],
       "@layouts/*": [
         "src/layouts/*"
       ]
