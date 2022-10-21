@@ -7,8 +7,8 @@ export function Figure1() {
       <div className="py-6 sm:py-12">
         <GradientCircle className="left-[50%] h-[230px] w-[230px] -translate-x-[50%] sm:h-[400px] sm:w-[400px]">
           <img
-            className="absolute -top-10 left-0 right-4 mx-auto w-[320px]"
-            src="../../public/avatar.png"
+            className="absolute -top-10 left-0 right-6 mx-auto w-[320px]"
+            src="./avatar.png"
             alt="Doyan Rebahan"
           />
           <Tag
