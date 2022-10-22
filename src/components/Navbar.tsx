@@ -6,24 +6,34 @@ export function Navbar() {
   const { expand, click } = useHamburger()
   return (
     <>
-      <div className="sticky z-10 top-0 grid w-full grid-cols-2 bg-mirage text-lg max-lg:p-4 lg:py-8 lg:grid-cols-5">
-        <div className="font-bold max-sm:font-semibold sm:text-2xl">
+      <div className="fixed top-0 z-10 grid w-full grid-cols-2 text-lg lg:grid-cols-5 lg:py-8">
+        <div className="font-bold max-lg:translate-x-4 max-lg:translate-y-4 max-sm:font-semibold sm:text-2xl">
           Jestsee.
         </div>
-        <Hamburger expand={expand} onClick={click} />
-        {expand && <div className="col-span-2 grid grid-cols-2 lg:col-span-4 lg:grid-cols-4">
-          <ul className="col-span-3 grid grid-cols-1 text-center lg:grid-cols-3">
-            <NavbarItem text="Home" />
-            <NavbarItem text="Section 2" />
-            <NavbarItem text="Section 3" />
-          </ul>
-          <button
-            type="button"
-            className="rounded-2xl bg-[#009683] px-4 py-[0.125rem] font-bold max-lg:col-span-2"
-          >
-            Resume
-          </button>
-        </div>}
+        <Hamburger
+          className="z-10 max-lg:-translate-x-5 max-lg:translate-y-4"
+          expand={expand}
+          onClick={click}
+        />
+        <div
+          className={`${
+            !expand ? 'max-lg:-translate-x-[200%]' : ''
+          } col-span-2 transition-all max-lg:h-[100vh] max-lg:w-[100vw] max-lg:-translate-y-7 max-lg:bg-teal-400 lg:col-span-4`}
+        >
+          <div className="grid grid-cols-2 lg:grid-cols-4">
+            <ul className="col-span-3 grid grid-cols-1 gap-y-2 text-center max-lg:mt-16 lg:grid-cols-3">
+              <NavbarItem text="Home" />
+              <NavbarItem text="Section 2" />
+              <NavbarItem text="Section 3" />
+            </ul>
+            <button
+              type="button"
+              className="rounded-2xl bg-[#009683] px-4 py-[0.125rem] font-bold max-lg:col-span-2"
+            >
+              Resume
+            </button>
+          </div>
+        </div>
       </div>
     </>
   )
