@@ -2,7 +2,7 @@ interface Props {
   className?: string
 }
 
-const Gitlab = ({ className }: Props) => {
+const GitlabIcon = ({ className }: Props) => {
   return (
     <svg
       className={className}
@@ -50,4 +50,4 @@ const Gitlab = ({ className }: Props) => {
   )
 }
 
-export default Gitlab
+export default GitlabIcon

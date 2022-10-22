@@ -8,7 +8,7 @@ export function Figure2() {
         src="./avatar2.png"
         alt="Tech Enthusiast"
       />
-      <div className="absolute max-sm:top-[300px] sm:bottom-0 left-[50%] flex max-md:flex-col -translate-x-[50%] gap-6">
+      <div className="absolute left-[50%] flex -translate-x-[50%] gap-6 max-md:flex-col max-sm:top-[365px] max-xs:top-[280px] sm:bottom-0">
         <Skill
           img="./tool.svg"
           alt="tool illustration"
