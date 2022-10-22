@@ -3,7 +3,6 @@ import { Tag } from './Tag'
 
 export function Figure1() {
   return (
-    <>
       <div className="py-6 sm:py-12">
         <GradientCircle className="left-[50%] h-[230px] w-[230px] -translate-x-[50%] sm:h-[400px] sm:w-[400px]">
           <img
@@ -23,6 +22,5 @@ export function Figure1() {
           />
         </GradientCircle>
       </div>
-    </>
   )
 }

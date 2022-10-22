@@ -9,6 +9,9 @@ module.exports = {
         'smoke': '#F4F4F4F4'
       },
     },
+    fontFamily: {
+      'montserrat': ['Montserrat', 'sans-serif']
+    },
 	},
 	plugins: [],
 }
