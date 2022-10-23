@@ -5,5 +5,5 @@ interface Props extends BaseProps {
 }
 
 export function NavbarItem({text, className}:Props) {
- return <li className={`${className}`}>{text}</li>
+ return <li className={`${className} max-lg:font-montserrat max-lg:text-sm`}>{text}</li>
 }

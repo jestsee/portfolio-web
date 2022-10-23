@@ -11,7 +11,7 @@ interface Props extends BaseProps {
 
 export function Skill({ img, alt, upperText, mainText, lowerText }: Props) {
   return (
-    <GlassContainer className="relative aspect-[4/5] w-[320px] rounded-3xl max-xs:px-6 px-8 py-10 font-montserrat transition-all hover:-translate-y-12 hover:scale-105 hover:shadow-xl hover:shadow-teal-500/25 max-xs:w-[240px] max-sm:w-[300px]">
+    <GlassContainer className="relative aspect-[4/5] w-[320px] rounded-3xl max-xs:px-6 px-8 py-10 font-montserrat transition-all hover:-translate-y-12 hover:scale-105 hover:shadow-xl hover:shadow-black/50 max-xs:w-[240px] max-sm:w-[300px]">
       <img className="mx-auto" src={img} alt={alt} />
       <div className="absolute max-xs:top-[52%] xs:bottom-14 opacity-50">
         <h3 className="text-xs uppercase tracking-widest">{upperText}</h3>

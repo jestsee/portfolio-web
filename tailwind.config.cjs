@@ -8,6 +8,16 @@ module.exports = {
         greenish: '#30E0CB',
         smoke: '#F4F4F4F4',
       },
+      keyframes: {
+        float: {
+          '0%': { transform: 'translate(0, 0px)' },
+          '50%': { transform: 'translate(0, 15px)' },
+          '100%': { transform: 'translate(0, -0px)' },
+        },
+      },
+      animation: {
+        floating: 'float 2s ease-in-out infinite',
+      },
     },
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
