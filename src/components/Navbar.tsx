@@ -24,19 +24,22 @@ export function Navbar() {
       >
         <div className="grid grid-cols-2 max-lg:font-montserrat lg:grid-cols-4">
           <ul className="col-span-3 grid grid-cols-1 gap-y-4 text-center max-lg:mt-16 lg:grid-cols-3">
-            <NavbarItem text="Home" className="place-self-end self-center" />
+            <NavbarItem
+              text="Home"
+              className="lg:place-self-end lg:self-center"
+            />
             <NavbarItem
               text="Section 2"
-              className="place-self-center self-center"
+              className="lg:place-self-center lg:self-center"
             />
             <NavbarItem
               text="Section 3"
-              className="place-self-start self-center"
+              className="lg:place-self-start lg:self-center"
             />
           </ul>
           <button
             type="button"
-            className="rounded-2xl px-4 py-[0.125rem] font-bold max-lg:col-span-2 max-lg:mt-4 max-lg:text-teal-400 lg:bg-[#009683]"
+            className="lg:max-w-fit rounded-lg px-6 py-1.5 font-semibold max-lg:col-span-2 max-lg:mt-4 max-lg:text-teal-400 lg:place-self-end lg:bg-[#009683] lg:text-sm"
           >
             Resume
           </button>
