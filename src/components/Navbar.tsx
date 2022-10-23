@@ -10,11 +10,11 @@ export function Navbar() {
   return (
     <>
       <div className="fixed top-0 z-10 grid w-full grid-cols-2 text-lg lg:grid-cols-5 lg:py-8">
-        <div className="font-bold max-lg:translate-x-4 max-lg:translate-y-4 max-sm:font-semibold sm:text-2xl">
+        <div className="ml-5 mt-5 -mb-5 font-bold max-sm:font-semibold sm:text-2xl lg:m-0">
           Jestsee.
         </div>
         <Hamburger
-          className="z-10 max-lg:-translate-x-5 max-lg:translate-y-4 spin"
+          className="z-10 mr-5 mt-4 -mb-4"
           expand={expand}
           onClick={click}
         />
