@@ -7,17 +7,18 @@ export function Figure2() {
         className="absolute -top-10 left-0 right-4 mx-auto w-[420px] animate-floating"
         src="./avatar2.png"
         alt="Tech Enthusiast"
+        loading="lazy"
       />
       <div className="absolute left-[50%] flex -translate-x-[50%] gap-6 max-md:flex-col max-sm:top-[365px] max-xs:top-[280px] sm:bottom-0">
         <Skill
-          img="./tool.svg"
+          img="./tool.png"
           alt="tool illustration"
           upperText="familiar with"
           mainText="JavaScript Frameworks"
           lowerText="React JS & Vue JS"
         />
         <Skill
-          img="./skill.svg"
+          img="./skill.png"
           alt="skill illustration"
           upperText="familiar with"
           mainText="Various Design Tools"
