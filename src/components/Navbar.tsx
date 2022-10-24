@@ -7,7 +7,7 @@ export function Navbar() {
   const mobile = `max-lg:h-[105vh] max-lg:w-[100vw] max-lg:-translate-y-8 max-lg:bg-black`
 
   return (
-    <div className="fixed top-0 z-10 grid h-8 w-full grid-cols-2 text-lg lg:grid-cols-5 lg:py-8 lg:px-16 xl:left-[50%] xl:mx-auto xl:max-w-[1200px] xl:-translate-x-[50%]">
+    <nav className="fixed top-0 z-10 grid h-8 w-full grid-cols-2 text-lg lg:grid-cols-5 lg:py-8 lg:px-16 xl:left-[50%] xl:mx-auto xl:max-w-[1200px] xl:-translate-x-[50%]">
       <div className="ml-6 mt-5 -mb-5 font-bold max-sm:font-semibold sm:text-2xl lg:m-0">
         Jestsee.
       </div>
@@ -45,6 +45,6 @@ export function Navbar() {
           </button>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
