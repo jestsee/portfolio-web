@@ -4,22 +4,24 @@ import { Navbar } from '@components/Navbar'
 import Intro from '@components/Intro'
 import { Figure1 } from '@components/Figure1'
 import { Figure2 } from '@components/Figure2'
+import { Portfolio } from '@components/Portfolio'
+import { LargeText } from '@components/LargeText'
 ---
 
 <Layout title="Under Construction🚧">
-  <main class="text-smoke">
+  <main class="text-smoke" id="top">
     <Navbar client:load />
     <div class="mx-auto max-w-[1200px] pt-12 max-sm:px-8">
       <Intro />
       <Figure1 />
-      <h3
-        class="max-w-[600px] mx-auto text-center my-20 max-lg:mt-24 font-bold max-sm:text-lg text-2xl"
-      >
+      <LargeText>
         Love to learn new things especially <span class="text-teal-400"
-          >technology and design related
+          >technology and design related field.
         </span>
-      </h3>
+      </LargeText>
       <Figure2 />
+      <div class="max-xs:h-[700px] max-sm:h-[840px]"></div>
+      <!-- <Portfolio /> -->
     </div>
   </main>
 </Layout>

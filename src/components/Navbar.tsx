@@ -4,7 +4,6 @@ import Hamburger from './Hamburger'
 
 export function Navbar() {
   const { expand, click } = useHamburger()
-
   const mobile = `max-lg:h-[105vh] max-lg:w-[100vw] max-lg:-translate-y-8 max-lg:bg-black`
 
   return (
@@ -27,6 +26,7 @@ export function Navbar() {
             <NavbarItem
               text="Home"
               className="lg:place-self-end lg:self-center"
+              href='#top'
             />
             <NavbarItem
               text="Section 2"
@@ -39,7 +39,7 @@ export function Navbar() {
           </ul>
           <button
             type="button"
-            className="lg:max-w-fit rounded-lg px-6 py-1.5 font-semibold max-lg:col-span-2 max-lg:mt-4 max-lg:text-teal-400 lg:place-self-end lg:bg-[#009683] lg:text-sm"
+            className="rounded-lg px-6 py-1.5 font-semibold max-lg:col-span-2 max-lg:mt-4 max-lg:text-teal-400 lg:max-w-fit lg:place-self-end lg:bg-[#009683] lg:text-sm"
           >
             Resume
           </button>
