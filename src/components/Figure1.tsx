@@ -20,7 +20,7 @@ export function Figure1() {
           text="Graphic"
           subText="designer"
           className="absolute right-0 translate-x-[40%] max-sm:top-32 sm:top-52"
-        />
+        /> 
       </GradientCircle>
     </div>
   )
