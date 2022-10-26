@@ -10,13 +10,13 @@ export function Portfolio() {
         What I am <span className="text-teal-400">working on</span>
       </LargeText>
       <div className="grid gap-y-2">
-        <p className="text-center text-sm opacity-80">
+        <p className="text-center opacity-80">
           Here are some of the projects I have built, including school projects
           and personal projects. These projects are divided into code-related
           projects and some of my designs.
         </p>
-        <p className="text-center opacity-75">---</p>
-        <h3 className="mb-2 text-center font-sourcecode text-sm font-semibold tracking-widest text-teal-400">
+        <p className="text-center opacity-75">—</p>
+        <h3 className="mb-2 text-center font-sourcecode text-sm font-semibold tracking-wide text-teal-400">
           code-related projects
         </h3>
         <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -35,8 +35,8 @@ export function Portfolio() {
             }
           )}
         </div>
-        <p className="text-center opacity-75">---</p>
-        <h3 className="mb-2 text-center font-sourcecode text-sm font-semibold tracking-widest text-teal-400">
+        <p className="text-center opacity-75">—</p>
+        <h3 className="mb-2 text-center font-sourcecode text-sm font-semibold tracking-wide text-teal-400">
           design portfolio
         </h3>
         <p className="text-center font-sourcecode text-sm opacity-75">
