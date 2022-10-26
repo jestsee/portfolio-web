@@ -21,6 +21,7 @@ module.exports = {
     },
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
+      sourcecode: ['Source Code Pro', 'monospace'],
     },
     screens: {
       xxs: '320px',
