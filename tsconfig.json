@@ -12,6 +12,9 @@
       "@custom-types/*": [
         "src/custom-types/*"
       ],
+      "@data/*": [
+        "src/data/*"
+      ],
       "@layouts/*": [
         "src/layouts/*"
       ]
