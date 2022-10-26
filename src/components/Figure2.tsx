@@ -15,7 +15,7 @@ export function Figure2() {
           img="./tool.png"
           alt="tool illustration"
           upperText="familiar with"
-          mainText="JavaScript Frameworks"
+          mainText="Front-End Frameworks"
           lowerText="React JS & Vue JS"
         />
         <Skill

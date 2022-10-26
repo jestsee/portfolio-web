@@ -1,6 +1,6 @@
-import { NavbarItem } from '@components/NavbarItem'
+import { NavbarItem } from '@components/Navbar/NavbarItem'
 import { useHamburger } from 'src/hooks/useHamburger'
-import Hamburger from './Hamburger'
+import Hamburger from '../Hamburger'
 
 export function Navbar() {
   const { expand, click } = useHamburger()
