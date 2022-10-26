@@ -20,7 +20,7 @@ export function Portfolio() {
           code-related projects
         </h3>
         <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map(
+          {/* {data.map(
             ({ title, description, tools, githubUrl, projectUrl }, idx) => {
               return (
                 <CodeItem
@@ -33,7 +33,7 @@ export function Portfolio() {
                 />
               )
             }
-          )}
+          )} */}
         </div>
         <p className="text-center opacity-75">---</p>
         <h3 className="mb-2 text-center font-sourcecode text-sm font-semibold tracking-widest text-teal-400">
