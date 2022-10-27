@@ -1,11 +1,12 @@
-import { Icon } from '@components/Icon'
 import LinkedIn from '@icons/LinkedInIcon'
 import GithubIcon from '@icons/GithubIcon'
 import GitlabIcon from '@icons/GitlabIcon'
+import { Icon } from '@components/Icon'
+import { AnimationDiv } from './AnimationDiv'
 
 const Intro = () => {
   return (
-    <div className="mx-auto my-16 text-center max-sm:px-2 sm:max-w-[420px] lg:pt-12">
+    <AnimationDiv className="mx-auto my-16 text-center max-sm:px-2 sm:max-w-[420px] lg:pt-12">
       <h1 className="text-5xl font-medium text-teal-400 sm:text-6xl">Jesica</h1>
       <h2 className="mt-2 text-xl sm:text-3xl">An informatics student.</h2>
       <p className="mt-2 max-sm:text-xs">
@@ -23,7 +24,7 @@ const Intro = () => {
           <GitlabIcon className="h-9 sm:h-10 sm:w-10" />
         </Icon>
       </div>
-    </div>
+    </AnimationDiv>
   )
 }
 

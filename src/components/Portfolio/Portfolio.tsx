@@ -1,11 +1,12 @@
 import { LargeText } from '@components/LargeText'
-import { DesignItem } from './DesignItem'
+// import { DesignItem } from './DesignItem'
 import { CodeItem } from './CodeItem'
 import { data } from '@data/code_project.json'
+import { AnimationDiv } from '@components/AnimationDiv'
 
 export function Portfolio() {
   return (
-    <>
+    <AnimationDiv>
       <LargeText className="mb-4 text-4xl max-sm:text-2xl">
         What I am <span className="text-teal-400">working on</span>
       </LargeText>
@@ -22,6 +23,7 @@ export function Portfolio() {
         <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {data.map(
             ({ title, description, tools, githubUrl, projectUrl }, idx) => {
+              // TODO kalo mau per item maka harus pake intersection observer
               return (
                 <CodeItem
                   key={idx}
@@ -51,6 +53,6 @@ export function Portfolio() {
           tools="HTML CSS"
         />
       </div> */}
-    </>
+    </AnimationDiv>
   )
 }

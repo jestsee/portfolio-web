@@ -10,17 +10,17 @@ import { LargeText } from '@components/LargeText'
 
 <Layout title="Under Construction🚧">
   <main class="text-smoke" id="top">
-    <Navbar client:load />
+    <Navbar client:visible />
     <div class="mx-auto max-w-[1200px] pt-12 max-lg:px-8 max-xl:px-16 pb-16">
-      <Intro />
-      <Figure1 />
-      <LargeText>
+      <Intro client:load />
+      <Figure1 client:load />
+      <LargeText client:visible>
         Love to learn new things especially <span class="text-teal-400"
           >technology and design related field.
         </span>
       </LargeText>
       <Figure2 />
-      <Portfolio />
+      <Portfolio client:visible/>
     </div>
   </main>
 </Layout>
@@ -35,3 +35,9 @@ import { LargeText } from '@components/LargeText'
     font-family: 'Inter', sans-serif;
   }
 </style>
+
+<!-- TODO -->
+<!-- 1. kalo udah mulai scroll di mobile: hide Jestsee. -->
+<!-- 2. kalo udah mulai scroll di mobile: kasih shadow di hamburger -->
+<!-- 3. kasih tombol see more di bawah porto terus redirect ke github? -->
+<!-- 4. kasih loading di awal nunggu semua js ke-load baru masuk ke web? -->

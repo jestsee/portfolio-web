@@ -1,5 +1,5 @@
 import { NavbarItem } from '@components/Navbar/NavbarItem'
-import { useHamburger } from 'src/hooks/useHamburger'
+import { useHamburger } from '@hooks/useHamburger'
 import Hamburger from '../Hamburger'
 
 export function Navbar() {
