@@ -10,7 +10,7 @@
       "title": "Happy Monniversary",
       "projectUrl": "https://moniversary.netlify.app/",
       "description": "A web application to collect wishes for a friend's birthday. Utilize Notion's API as the database to save all the wishes.",
-      "tools": ["Vue", "Tailwind", "Headless UI", "Notion", "Express"]
+      "tools": ["Vue", "TypeScript", "Tailwind", "Notion", "Express"]
     },
     {
       "title": "Klinik Pintar Clone",

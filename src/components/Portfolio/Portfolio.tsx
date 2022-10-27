@@ -16,7 +16,7 @@ export function Portfolio() {
           projects and some of my designs.
         </p>
         <p className="text-center opacity-75">—</p>
-        <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold tracking-wide text-teal-400">
+        <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold uppercase tracking-wide text-teal-400">
           code-related projects
         </h3>
         <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -36,7 +36,7 @@ export function Portfolio() {
           )}
         </div>
         <p className="text-center opacity-75">—</p>
-        <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold tracking-wide text-teal-400">
+        <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold uppercase tracking-wide text-teal-400">
           design portfolio
         </h3>
         <p className="text-center font-sourcecode text-sm opacity-75">
