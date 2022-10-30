@@ -3,6 +3,7 @@ import { LargeText } from '@components/LargeText'
 import { CodeItem } from './CodeItem'
 import { data } from '@data/code_project.json'
 import { AnimationDiv } from '@components/AnimationDiv'
+import { Button } from '@components/Button'
 
 export function Portfolio() {
   return (
@@ -26,6 +27,15 @@ export function Portfolio() {
             return <CodeItem key={item.id} {...item} />
           })}
         </div>
+        <Button
+          title="btn-more"
+          className="mx-auto mt-8 mb-16"
+          outline
+          link
+          href="https://github.com/jestsee"
+        >
+          See More
+        </Button>
         <p className="text-center opacity-75">—</p>
         <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold uppercase tracking-wide text-teal-400">
           design portfolio

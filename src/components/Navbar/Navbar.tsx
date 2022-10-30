@@ -1,3 +1,4 @@
+import { Button } from '@components/Button'
 import { NavbarItem } from '@components/Navbar/NavbarItem'
 import { useHamburger } from '@hooks/useHamburger'
 import Hamburger from '../Hamburger'
