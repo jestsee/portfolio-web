@@ -21,21 +21,10 @@ export function Portfolio() {
           code-related projects
         </h3>
         <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map(
-            ({ title, description, tools, githubUrl, projectUrl }, idx) => {
-              // TODO kalo mau per item maka harus pake intersection observer
-              return (
-                <CodeItem
-                  key={idx}
-                  title={title}
-                  description={description}
-                  tools={tools}
-                  githubUrl={githubUrl}
-                  projectUrl={projectUrl}
-                />
-              )
-            }
-          )}
+          {data.map((item) => {
+            // TODO kalo mau per item maka harus pake intersection observer
+            return <CodeItem key={item.id} {...item} />
+          })}
         </div>
         <p className="text-center opacity-75">—</p>
         <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold uppercase tracking-wide text-teal-400">

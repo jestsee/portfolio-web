@@ -1,42 +1,70 @@
 {
   "data": [
     {
+      "id": 1,
       "title": "MyGram",
       "githubUrl": "https://github.com/jestsee/DTS-H8-final-project",
       "description": "An API for an Instagram-like application. Built with Gin, Gorm & JWT for the user authentication.",
-      "tools": ["Golang", "Gin", "Gorm", "JWT"]
+      "tools": [
+        "Golang",
+        "Gin",
+        "Gorm",
+        "JWT"
+      ]
     },
     {
+      "id": 2,
       "title": "Happy Monniversary",
       "projectUrl": "https://moniversary.netlify.app/",
       "description": "A web application to collect wishes for a friend's birthday. Utilize Notion's API as the database to save all the wishes.",
-      "tools": ["Vue", "TypeScript", "Tailwind", "Notion", "Express"]
+      "tools": [
+        "Vue",
+        "TypeScript",
+        "Tailwind",
+        "Notion",
+        "Express"
+      ]
     },
     {
+      "id": 3,
       "title": "Klinik Pintar Clone",
       "projectUrl": "https://klinik-pintar-clone.herokuapp.com",
       "githubUrl": "https://github.com/jestsee/klinik-pintar-clone",
       "description": "Clone one of Klinik Pintar's web page, using their REST API to display the clinics' data.",
-      "tools": ["Vue", "SASS"]
+      "tools": [
+        "Vue",
+        "SASS"
+      ]
     },
     {
+      "id": 4,
       "title": "MIG Company Web",
       "projectUrl": "https://mig-test-app.herokuapp.com/dashboard",
       "githubUrl": "https://github.com/jestsee/mig-test",
       "description": "A responsive web application for company profile, using a REST API to do CRUD operation for costumers' data.",
-      "tools": ["React", "Tailwind"]
+      "tools": [
+        "React",
+        "Tailwind"
+      ]
     },
     {
+      "id": 5,
       "title": "Cakrawala",
       "githubUrl": "https://gitlab.informatika.org/karlsenab_7/if3250_2022_14_cakrawala",
       "description": "A simple mobile payment application, built with Flutter and Golang",
-      "tools": ["Golang", "Flutter"]
+      "tools": [
+        "Golang",
+        "Flutter"
+      ]
     },
     {
+      "id": 6,
       "title": "PerluDilindungi",
       "githubUrl": "https://github.com/jestsee/IF3210-2022-Android-10",
       "description": "A simple health facility finder for Android device, built with Kotlin.",
-      "tools": ["Kotlin"]
+      "tools": [
+        "Kotlin"
+      ]
     }
   ]
 }

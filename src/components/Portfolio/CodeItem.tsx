@@ -2,6 +2,7 @@ import type { BaseProps } from '@custom-types/props'
 import { FolderIcon } from '@icons/FolderIcon'
 import { GithubOutlineIcon } from '@icons/GithubOutlineIcon'
 import { OpenIcon } from '@icons/OpenIcon'
+import React from 'react'
 
 interface Props extends BaseProps {
   title: string
@@ -39,8 +40,8 @@ export function CodeItem({
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="mt-2 text-sm opacity-80">{description}</p>
         <p className="mt-8 font-sourcecode text-xs uppercase tracking-wider opacity-75">
-          {tools.map((item) => {
-            return <>{item}&emsp;</>
+          {tools.map((item, idx) => {
+            return <React.Fragment key={idx}>{item}&emsp;</React.Fragment>
           })}
         </p>
       </div>
