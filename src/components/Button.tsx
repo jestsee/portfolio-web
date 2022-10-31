@@ -20,7 +20,7 @@ export const Button = ({
   link = false,
 }: Props) => {
   const classes = classNames([
-    'w-fit rounded-md px-8 py-4 font-montserrat text-sm shadow-xl hover:scale-110 transition-all capitalize',
+    'w-fit rounded-md px-6 py-3 font-montserrat text-xs shadow-xl hover:scale-110 transition-all capitalize',
     className,
     {
       'border border-teal-400 text-teal-400': outline,
