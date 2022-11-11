@@ -1,14 +1,28 @@
-import { Button } from '@components/Button'
 import { NavbarItem } from '@components/Navbar/NavbarItem'
 import { useHamburger } from '@hooks/useHamburger'
+import { useScrollNavbar } from '@hooks/useScrollNavbar'
+import { useEffect } from 'react'
 import Hamburger from '../Hamburger'
 
 export function Navbar() {
   const { expand, click } = useHamburger()
+  const { controlNavbar, show, lastScrollY } = useScrollNavbar()
   const mobile = `max-lg:h-[105vh] max-lg:w-[100vw] max-lg:-translate-y-8 max-lg:bg-black`
 
+  useEffect(() => {
+    if (!window) return
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  }, [lastScrollY])
+
   return (
-    <nav className="fixed top-0 z-10 grid h-8 w-full grid-cols-2 text-lg lg:grid-cols-5 lg:px-16 lg:py-8 xl:left-[50%] xl:mx-auto xl:max-w-[1200px] xl:-translate-x-[50%] xl:px-0">
+    <nav
+      className={`fixed top-0 z-10 grid h-16 w-full grid-cols-2 bg-mirage/75 text-lg backdrop-blur-sm backdrop-filter transition-all duration-300 lg:h-20 lg:grid-cols-5 lg:px-16 lg:py-6 xl:left-[50%] xl:mx-auto xl:max-w-[1200px] xl:-translate-x-[50%] xl:px-0 ${
+        show ? 'translate-y-0' : '-translate-y-[100%]'
+      }`}
+    >
       <div className="ml-8 mt-5 -mb-5 font-bold max-sm:font-semibold sm:text-2xl lg:m-0">
         Jestsee.
       </div>
@@ -20,7 +34,7 @@ export function Navbar() {
       <div
         className={`${
           !expand ? 'max-lg:-translate-x-[200%]' : ''
-        } ${mobile} col-span-2 transition-all max-lg:pt-[26vh] lg:col-span-4`}
+        } ${mobile} col-span-2 transition-all duration-300 max-lg:pt-[26vh] lg:col-span-4`}
       >
         <div className="grid grid-cols-2 max-lg:font-montserrat lg:grid-cols-4">
           <ul className="col-span-3 grid grid-cols-1 gap-y-4 text-center max-lg:mt-16 lg:grid-cols-3">
