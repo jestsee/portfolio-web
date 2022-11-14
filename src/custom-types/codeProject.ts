@@ -1,9 +1,16 @@
 import type { Url } from "url"
+import type { StoryblokBase } from "./storyblokBase"
 
-export interface CodeProject {
-  title: string
-  description: string
-  link?: Url
-  github?: Url
-  tools: string[]
+export interface CodeProject extends StoryblokBase {
+  content: {
+    title: string
+    description: string
+    link?: Url
+    github?: Url
+    tools: string[]
+  }
+}
+
+export interface AllCodeProjects {
+  stories: CodeProject[]
 }

@@ -1,10 +1,13 @@
 import { LargeText } from '@components/LargeText'
-// import { DesignItem } from './DesignItem'
 import { CodeItem } from './CodeItem'
 import { data } from '@data/code_project.json'
 import { AnimationDiv } from '@components/AnimationDiv'
 import { Button } from '@components/Button'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { CodeProjects } from './CodeProjects'
+// import { DesignItem } from './DesignItem'
 
+const queryClient = new QueryClient()
 export function Portfolio() {
   return (
     <AnimationDiv>
@@ -21,12 +24,11 @@ export function Portfolio() {
         <h3 className="mb-4 mt-2 text-center font-sourcecode text-sm font-semibold uppercase tracking-wide text-teal-400">
           code-related projects
         </h3>
-        <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map((item) => {
-            // TODO kalo mau per item maka harus pake intersection observer
-            return <CodeItem key={item.id} {...item} />
-          })}
-        </div>
+        <QueryClientProvider client={queryClient}>
+          <div className="mb-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <CodeProjects />
+          </div>
+        </QueryClientProvider>
         <Button
           title="btn-more"
           className="mx-auto mt-8 mb-16"
