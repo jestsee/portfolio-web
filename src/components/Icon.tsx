@@ -1,8 +1,9 @@
 import type {BaseProps} from '@custom-types/props'
+import type { ReactNode } from 'react'
 
 interface Props extends BaseProps {
   href?: string
-  children: JSX.Element
+  children: ReactNode
 }
 
 export function Icon({ children, className, href }: Props) {

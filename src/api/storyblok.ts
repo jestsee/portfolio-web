@@ -10,7 +10,7 @@ const Storyblok = new StoryblokClient({
 
 export const fetchCodeProjects = async () => {
   const { data } = await Storyblok.get('cdn/stories', {
-    version: 'draft',
+    starts_with: 'code-project/'
   })
   return data
 }

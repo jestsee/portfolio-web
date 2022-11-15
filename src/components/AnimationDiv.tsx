@@ -3,7 +3,7 @@ import { useAnimationVariant } from '@hooks/useAnimationVariant'
 import type { BaseProps } from '@custom-types/props'
 
 interface Props extends BaseProps {
-  children: JSX.Element | JSX.Element[]
+  children: React.ReactNode
 }
 
 export const AnimationDiv = ({ className, children }: Props) => {

@@ -6,7 +6,6 @@ import { CodeItem } from './CodeItem'
 export const CodeProjects = () => {
   const {
     data: temp,
-    error,
     isError,
     isLoading,
   } = useQuery('codeProjects', fetchCodeProjects)

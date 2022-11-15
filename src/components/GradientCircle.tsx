@@ -1,7 +1,8 @@
 import type { BaseProps } from '@custom-types/props'
+import type { ReactNode } from 'react'
 
 interface Props extends BaseProps {
-  children?: JSX.Element | JSX.Element[]
+  children?: ReactNode
 }
 
 // background: linear-gradient(180deg, #4DA69B 0%, #36FFE6 0.01%, #16695F 51.56%, #000000 100%);

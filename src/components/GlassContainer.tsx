@@ -1,7 +1,8 @@
 import type { BaseProps } from '@custom-types/props'
+import type { ReactNode } from 'react'
 
 interface Props extends BaseProps {
-  children?: JSX.Element | JSX.Element[]
+  children?: ReactNode
 }
 
 export function GlassContainer({ className, children }: Props) {

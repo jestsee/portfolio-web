@@ -1,9 +1,10 @@
 import type { BaseProps } from '@custom-types/props'
 import { motion } from 'framer-motion'
 import { useAnimationVariant } from '@hooks/useAnimationVariant'
+import type { ReactNode } from 'react'
 
 interface Props extends BaseProps {
-  children: JSX.Element | JSX.Element[] | React.ReactNode
+  children: ReactNode
 }
 
 export function LargeText({ children, className }: Props) {

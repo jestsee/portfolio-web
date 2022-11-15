@@ -1,10 +1,11 @@
 import type { BaseProps } from '@custom-types/props'
 import classNames from 'classnames'
+import type { ReactNode } from 'react'
 
 interface Props extends BaseProps {
   type?: 'button' | 'submit' | 'reset'
   title: string
-  children: JSX.Element | JSX.Element[] | string
+  children: ReactNode
   outline?: boolean
   link?: boolean
   href?: string
