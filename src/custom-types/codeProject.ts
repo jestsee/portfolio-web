@@ -1,4 +1,4 @@
-import type { Url } from "url"
+import type { Url } from "./url"
 import type { StoryblokBase } from "./storyblokBase"
 
 export interface CodeProject extends StoryblokBase {

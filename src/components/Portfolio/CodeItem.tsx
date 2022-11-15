@@ -2,7 +2,7 @@ import type { BaseProps } from '@custom-types/props'
 import { FolderIcon } from '@icons/FolderIcon'
 import { GithubOutlineIcon } from '@icons/GithubOutlineIcon'
 import { OpenIcon } from '@icons/OpenIcon'
-import React from 'react'
+import { Fragment } from 'react'
 
 interface Props extends BaseProps {
   title: string
@@ -20,10 +20,10 @@ export function CodeItem({
   githubUrl,
 }: Props) {
   return (
-    <div className="h-full w-full rounded-2xl bg-slate-800 bg-cover bg-center px-8 py-10 shadow-xl shadow-black/10 transition-all hover:scale-105">
+    <div className="h-full w-full rounded-2xl bg-slate-800 px-8 py-10 shadow-xl shadow-black/10 transition-all hover:scale-105">
       <div className="flex justify-between">
         <FolderIcon className="h-10 w-10 text-teal-400" />
-        <div className="z-[2] flex items-center gap-x-4">
+        <div className="flex items-center gap-x-4">
           {projectUrl && (
             <a href={projectUrl} aria-label="Project URL" target="_blank">
               <OpenIcon className="h-6 w-6 text-smoke hover:text-teal-400" />
@@ -41,7 +41,7 @@ export function CodeItem({
         <p className="mt-2 text-sm opacity-80">{description}</p>
         <p className="mt-8 font-sourcecode text-xs uppercase tracking-wider opacity-75">
           {tools.map((item, idx) => {
-            return <React.Fragment key={idx}>{item}&emsp;</React.Fragment>
+            return <Fragment key={idx}>{item}&emsp;</Fragment>
           })}
         </p>
       </div>
