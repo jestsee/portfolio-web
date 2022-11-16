@@ -18,18 +18,18 @@ export const CodeProjects = () => {
         <FolderIcon className="h-10 w-10 text-teal-400" />
         <div className="mt-8 h-5 w-1/2 rounded-full bg-slate-700"></div>
         <div className="flex gap-x-2">
-          <div className="mt-4 h-4 w-1/4 rounded-full bg-slate-700"></div>
+          <div className="mt-4 h-4 w-1/4 rounded-full bg-slate-600"></div>
           <div className="mt-4 h-4 w-1/6 rounded-full bg-slate-700"></div>
           <div className="mt-4 h-4 w-1/2 rounded-full bg-slate-700"></div>
         </div>
         <div className="flex gap-x-2">
           <div className="mt-4 h-4 w-[10%] rounded-full bg-slate-700"></div>
           <div className="mt-4 h-4 w-1/2 rounded-full bg-slate-700"></div>
-          <div className="mt-4 h-4 w-1/5 rounded-full bg-slate-700"></div>
+          <div className="mt-4 h-4 w-1/5 rounded-full bg-slate-600"></div>
         </div>
         <div className="flex gap-x-4">
           <div className="mt-6 h-3 w-[12%] rounded-full bg-slate-700"></div>
-          <div className="mt-6 h-3 w-[15%] rounded-full bg-slate-700"></div>
+          <div className="mt-6 h-3 w-[15%] rounded-full bg-slate-600"></div>
         </div>
       </div>
     </div>
