@@ -1,8 +1,18 @@
+import { motion } from 'framer-motion'
 import { Skill } from './Skill'
+import { useAnimationVariant } from '@hooks/useAnimationVariant'
 
 export function Figure2() {
+  const { transitionIn } = useAnimationVariant()
   return (
-    <div className="relative left-[50%] h-[1080px] w-full -translate-x-[50%] max-xs:h-[900px] lg:h-[800px] lg:w-[800px]">
+    <motion.div
+      variants={transitionIn}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.55 }}
+      style={{ x: '-50%' }}
+      className="relative left-[50%] h-[1080px] w-full max-xs:h-[900px] lg:h-[800px] lg:w-[800px]"
+    >
       <div className="aspect-square w-full bg-[radial-gradient(circle_closest-side,_var(--tw-gradient-stops))] from-teal-600 via-teal-900 to-mirage"></div>
       <img
         className="absolute -top-10 left-0 right-4 mx-auto animate-floating"
@@ -27,6 +37,6 @@ export function Figure2() {
           lowerText="Adobe Photoshop & Adobe Illustrator"
         />
       </div>
-    </div>
+    </motion.div>
   )
 }
